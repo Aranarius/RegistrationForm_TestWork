@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+
+</head>
+<body>
+<div class="p-x-2 p-y-2  ">
+    <!--<form class="card card-block m-x-auto bg-faded form-width " action="../Registration.php" method="post">-->
+    <form class="card card-block m-x-auto bg-faded form-width " action="../Database/DBconnect.php" method="post">
+        <legend class="m-b-1 text-xs-center"><h2>Registration form</h2></legend>
+        <br/>
+        <div class="form-group input-group">
+ <span class="has-float-label">
+ <input class="form-control" id="first" name="Name" type="text" placeholder="Name"/>
+ <label for="first">Name</label>
+ </span>
+
+            <span class="has-float-label">
+ <input class="form-control" id="last" type="text" name="Surname" placeholder="Surname"/>
+ <label for="last">Surname</label>
+ </span>
+            <div class="form-group has-float-label">
+                <input class="form-control" id="login" type="text" name="login" placeholder="nickname"/>
+                <label for="login">Login</label>
+            </div>
+        </div>
+        <div class="form-group input-group">
+            <span class="input-group-addon">@</span>
+            <span class="has-float-label">
+ <input class="form-control" id="email" type="text" name="email" placeholder="name@example.com"/>
+ <label for="email">E-mail</label>
+ </span>
+        </div>
+        <div class="form-group has-float-label">
+            <input class="form-control" id="date" type="date" name="date" placeholder="•••"/>
+            <label for="date">Date of birth</label>
+        </div>
+        <div class="form-group has-float-label">
+            <input class="form-control" id="password" type="password" name="password" placeholder="•••"/>
+            <label for="password">Password</label>
+        </div>
+        <div class="form-group has-float-label">
+            <select class="form-control custom-select" id="country" name="country">
+                <option selected>Ukraine</option>
+                <option>Russia</option>
+                <option>United States</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Czech Republic </option>
+                <option>Slovakia </option>
+            </select>
+            <label for="country">Your country</label>
+        </div>
+        <div class="form-group">
+            <label class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" name="checkbox"  value="Yes" />
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">I agree with  all terms</span>
+            </label>
+        </div>
+        <br/>
+        <div class="text-xs-center">
+            <button class="btn btn-block btn-primary" type="submit"> Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
